@@ -11,3 +11,4 @@ C:\Users\xu747\documents\visual studio 2017\Projects\ELAB\ELAB\bin\Debug\MySql.D
 C:\Users\xu747\documents\visual studio 2017\Projects\ELAB\ELAB\obj\Debug\ELAB.exe
 C:\Users\xu747\documents\visual studio 2017\Projects\ELAB\ELAB\obj\Debug\ELAB.pdb
 C:\Users\xu747\documents\visual studio 2017\Projects\ELAB\ELAB\obj\Debug\ELAB.JExamForm.resources
+C:\Users\xu747\documents\visual studio 2017\Projects\ELAB\ELAB\obj\Debug\ELAB.CExamForm.resources

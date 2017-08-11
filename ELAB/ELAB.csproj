@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CExamForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CExamForm.Designer.cs">
+      <DependentUpon>CExamForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="JExamAdmin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -67,6 +73,9 @@
     <Compile Include="StatusForm.Designer.cs">
       <DependentUpon>StatusForm.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="CExamForm.resx">
+      <DependentUpon>CExamForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="JExamAdmin.resx">
       <DependentUpon>JExamAdmin.cs</DependentUpon>
     </EmbeddedResource>
