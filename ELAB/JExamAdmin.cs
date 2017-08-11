@@ -16,12 +16,15 @@ namespace ELAB
         {
             InitializeComponent();
             WindowDefaultLocation();
+            textBox1.PasswordChar = '*';
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             if (textBox1.Text == "jsjjcsys") System.Environment.Exit(0);
         }
+
+
 
         //窗口位置默认居中
         void WindowDefaultLocation()
@@ -32,6 +35,15 @@ namespace ELAB
             Point p = new Point(x, y);
             this.PointToScreen(p);
             this.Location = p;
+        }
+
+        private void textBox1_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                this.button1.Focus();
+                button1_Click(sender, e);
+            }
         }
     }
 }

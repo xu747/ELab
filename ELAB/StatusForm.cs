@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using System.Diagnostics;
 using MySql.Data;
 using MySql.Data.MySqlClient;
+using namespaceIniFile;
 
 namespace ELAB
 {
@@ -31,9 +32,16 @@ namespace ELAB
 
         string UsingTimeString;
 
+        public static string Path = @"../../config.ini";
+
+        namespaceIniFile.IniFile IniFile1 = new IniFile(Path);
+        
+
         void InitInfo()
         {
-
+            BuildingNumber = IniFile1.IniReadValue("location", "BuildingNumber");
+            RoomNumber = IniFile1.IniReadValue("location", "RoomNumber");
+            ComputerNumber = IniFile1.IniReadValue("location", "ComputerNumber");
         }
 
         //设置学号与姓名

@@ -16,7 +16,7 @@ namespace ELAB
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new JExamForm());
+            Application.Run(new StatusForm());
         }
     }
 }
