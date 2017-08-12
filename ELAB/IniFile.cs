@@ -9,7 +9,7 @@ namespace namespaceIniFile
 {
     class IniFile
     {
-        public string Path = @"../../config.ini";
+        public string Path = @"../../../config.ini";
 
         public IniFile(string path)
         {

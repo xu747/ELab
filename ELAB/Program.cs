@@ -16,7 +16,7 @@ namespace ELAB
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new StatusForm());
+            Application.Run(new SLogin());
         }
     }
 }

@@ -29,7 +29,7 @@ namespace ELAB
 
         void InitInfo()
         {
-
+            StuNumber = SInfoClass.StuInfoClass.StuNumber;
         }
 
 

@@ -32,7 +32,7 @@ namespace ELAB
 
         string UsingTimeString;
 
-        public static string Path = @"../../config.ini";
+        public static string Path = @"../../../config.ini";
 
         namespaceIniFile.IniFile IniFile1 = new IniFile(Path);
         
@@ -42,6 +42,10 @@ namespace ELAB
             BuildingNumber = IniFile1.IniReadValue("location", "BuildingNumber");
             RoomNumber = IniFile1.IniReadValue("location", "RoomNumber");
             ComputerNumber = IniFile1.IniReadValue("location", "ComputerNumber");
+
+            StuName = SInfoClass.StuInfoClass.StuName;
+            StuNumber = SInfoClass.StuInfoClass.StuNumber;
+
         }
 
         //设置学号与姓名
@@ -237,7 +241,9 @@ namespace ELAB
                     {
                         //执行关闭操作
                         if (conn.State == ConnectionState.Open) conn.Close();
-                        System.Environment.Exit(0);
+                        Application.Exit();
+                        
+                        //System.Environment.Exit(0);
                     }
 
                 }
